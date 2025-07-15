@@ -713,7 +713,7 @@ const App = () => {
         <h2 className="section-header">Benefits</h2>
         <ul className="benefits-list">
           <li className="benefit-item"><strong>✅ Smoothens Wrinkles & Fine Lines</strong></li>
-          <li className="benefit-item"><strong>✅ Reduces Dark Circles</strong></li>
+          <li className="benefit-item"><strong>✅ Remove Dark Circles</strong></li>
           <li className="benefit-item"><strong>✅ Firms Sagging Skin Around the Eyes</strong></li>
           <li className="benefit-item"><strong>✅ Hydrates & Nourishes the Eye Area</strong></li>
           <li className="benefit-item"><strong>✅ Gives a Younger, Brighter Look</strong></li>
