@@ -689,13 +689,11 @@ const App = () => {
           <div className="cta-buttons-container">
             <a
               className="cta-button cta-primary"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                setShowModal(true);
-              }}
+              href="https://wa.me/2348068537014?text=Hello%20there!%20I%20want%20to%20order%20the%20Pro%20Xylane%20Anti-aging%20Eye%20Cream."
+              
+              target="_blank"
             >
-              📱 Order NOW
+              📱 WhatsApp Me
             </a>
             <a
               className="cta-button cta-outline"
@@ -1001,7 +999,7 @@ const App = () => {
           <div className="modal" ref={modalRef} onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setShowModal(false)}>×</button>
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeb69JAQnxzKMsFJZPOoT_glpmzW1nbr1B-Rqo03UJKlPxvGQ/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSei85UA0Q9JoswkLNbos-YBtI_HesNzD_F6SnUTM3x049Mz7w/viewform?embedded=true"
               width="100%"
               height="600"
               frameBorder="0"
