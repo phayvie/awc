@@ -45,9 +45,7 @@ const App = () => {
           `}
         </script>
         <noscript>
-          <img height="1" width="1" style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=978328477621431&ev=PageView&noscript=1"
-          />
+          {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=978328477621431&ev=PageView&noscript=1" />`}
         </noscript>
       </Helmet>
 
@@ -718,7 +716,7 @@ const App = () => {
 
               target="_blank"
             >
-              📱 WhatsApp-Me
+              📱 WhatsApp Me
             </a>
             <a
               className="cta-button cta-outline"
