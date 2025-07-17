@@ -714,11 +714,11 @@ const App = () => {
           <div className="cta-buttons-container">
             <a
               className="cta-button cta-primary"
-              href="https://wa.me/2348068537014?text=Hello%20there!%20I%20want%20to%20order%20the%20Pro%20Xylane%20Anti-aging%20Eye%20Cream."
+              href="https://wa.me/2348053533921?text=Hello%20there!%20I%20want%20to%20order%20the%20Pro%20Xylane%20Anti-aging%20Eye%20Cream."
 
               target="_blank"
             >
-              📱 WhatsApp Me
+              📱 WhatsApp-Me
             </a>
             <a
               className="cta-button cta-outline"
