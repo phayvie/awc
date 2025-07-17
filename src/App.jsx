@@ -784,7 +784,7 @@ const App = () => {
         </div>
         <div className="inline-cta">
           <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
-            Love what you see? Order your Pro Xylane Eye Cream now!
+            Wantt to look younger? Tired of eye bags? Order your Pro Xylane Eye Cream now!
           </p>
           <div className="cta-buttons-container">
             <a
