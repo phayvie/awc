@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -26,6 +28,29 @@ const App = () => {
 
   return (
     <div className="container">
+
+      <Helmet>
+        <script>
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '978328477621431');
+            fbq('track', 'PageView');
+          `}
+        </script>
+        <noscript>
+          <img height="1" width="1" style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=978328477621431&ev=PageView&noscript=1"
+          />
+        </noscript>
+      </Helmet>
+
       <style jsx>{`
         /* Base Reset */
         * {
@@ -683,14 +708,14 @@ const App = () => {
           Contains Pro Xylane, a scientifically proven anti-aging ingredient that transforms your skin.
         </p>
         <div className="inline-cta">
-          <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
+          <p style={{ marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500' }}>
             Ready to transform your eyes? Get started today!
           </p>
           <div className="cta-buttons-container">
             <a
               className="cta-button cta-primary"
               href="https://wa.me/2348068537014?text=Hello%20there!%20I%20want%20to%20order%20the%20Pro%20Xylane%20Anti-aging%20Eye%20Cream."
-              
+
               target="_blank"
             >
               📱 WhatsApp Me
@@ -724,15 +749,15 @@ const App = () => {
 
       <section className="content-section fade-in">
         <h2 className="section-header">Product Gallery</h2>
-        <p style={{marginBottom: '30px'}}>See our premium eye cream from every angle</p>
+        <p style={{ marginBottom: '30px' }}>See our premium eye cream from every angle</p>
         <div className="product-gallery">
           <div className="gallery-item gallery-large">
             <div className={`image-placeholder ${imageLoaded['gallery1'] ? 'loaded' : ''}`}>
               <div className="loading-spinner"></div>
             </div>
-            <img 
-              src="/img1.webp" 
-              alt="Pro Xylane Eye Cream - Main Product" 
+            <img
+              src="/img1.webp"
+              alt="Pro Xylane Eye Cream - Main Product"
               className="product-image"
               onLoad={() => handleImageLoad('gallery1')}
             />
@@ -741,9 +766,9 @@ const App = () => {
             <div className={`image-placeholder ${imageLoaded['gallery2'] ? 'loaded' : ''}`}>
               <div className="loading-spinner"></div>
             </div>
-            <img 
-              src="/img2.webp" 
-              alt="Cream Texture and Application" 
+            <img
+              src="/img2.webp"
+              alt="Cream Texture and Application"
               className="product-image"
               onLoad={() => handleImageLoad('gallery2')}
             />
@@ -752,9 +777,9 @@ const App = () => {
             <div className={`image-placeholder ${imageLoaded['gallery3'] ? 'loaded' : ''}`}>
               <div className="loading-spinner"></div>
             </div>
-            <img 
-              src="/img3.webp" 
-              alt="Key Ingredients Showcase" 
+            <img
+              src="/img3.webp"
+              alt="Key Ingredients Showcase"
               className="product-image"
               onLoad={() => handleImageLoad('gallery3')}
             />
@@ -763,9 +788,9 @@ const App = () => {
             <div className={`image-placeholder ${imageLoaded['gallery4'] ? 'loaded' : ''}`}>
               <div className="loading-spinner"></div>
             </div>
-            <img 
-              src="/img4.webp" 
-              alt="Premium Packaging" 
+            <img
+              src="/img4.webp"
+              alt="Premium Packaging"
               className="product-image"
               onLoad={() => handleImageLoad('gallery4')}
             />
@@ -774,16 +799,16 @@ const App = () => {
             <div className={`image-placeholder ${imageLoaded['gallery5'] ? 'loaded' : ''}`}>
               <div className="loading-spinner"></div>
             </div>
-            <img 
-              src="/img5.webp" 
-              alt="Dermatologist Tested Certificate" 
+            <img
+              src="/img5.webp"
+              alt="Dermatologist Tested Certificate"
               className="product-image"
               onLoad={() => handleImageLoad('gallery5')}
             />
           </div>
         </div>
         <div className="inline-cta">
-          <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
+          <p style={{ marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500' }}>
             Want to look younger? Tired of eye bags? Order your Pro Xylane Eye Cream now!
           </p>
           <div className="cta-buttons-container">
@@ -823,16 +848,16 @@ const App = () => {
           <div className={`image-placeholder ${imageLoaded['before-after'] ? 'loaded' : ''}`}>
             <div className="loading-spinner"></div>
           </div>
-          <img 
-            src="/img6.webp" 
-            alt="Before and After" 
+          <img
+            src="/img6.webp"
+            alt="Before and After"
             className="product-image"
             onLoad={() => handleImageLoad('before-after')}
           />
         </div>
         <p>Visible improvements in skin smoothness, brightness, and reduced wrinkles.</p>
         <div className="inline-cta">
-          <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
+          <p style={{ marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500' }}>
             See these results for yourself!
           </p>
           <div className="cta-buttons-container">
@@ -866,7 +891,7 @@ const App = () => {
         <div className="testimonial">💬 "My wrinkles are almost gone in just 10 days!" – Chinwe A.</div>
         <div className="testimonial">💬 "Very gentle on my sensitive skin. I love it!" – Ngozi L.</div>
         <div className="inline-cta">
-          <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
+          <p style={{ marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500' }}>
             Join thousands of satisfied customers!
           </p>
           <div className="cta-buttons-container">
@@ -908,19 +933,19 @@ const App = () => {
         <div className="pricing-grid">
           <div className="pricing-card">
             <h3>📦 Single Jar</h3>
-            <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#667eea', margin: '20px 0'}}>₦17,000</div>
+            <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#667eea', margin: '20px 0' }}>₦17,000</div>
           </div>
           <div className="pricing-card featured">
             <h3>📦 Double Pack</h3>
-            <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#667eea', margin: '20px 0'}}>₦24,500</div>
+            <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#667eea', margin: '20px 0' }}>₦24,500</div>
             <p><strong>+ FREE DELIVERY</strong></p>
           </div>
         </div>
         <div className="urgency-section">
-          <p style={{fontSize: '1.2rem', fontWeight: 'bold', color: '#dc2626'}}>🔥 LIMITED OFFER: 40% Discount Today Only!</p>
+          <p style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#dc2626' }}>🔥 LIMITED OFFER: 40% Discount Today Only!</p>
         </div>
         <div className="inline-cta">
-          <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
+          <p style={{ marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500' }}>
             Don't miss out on this exclusive pricing!
           </p>
           <div className="cta-buttons-container">
@@ -956,8 +981,8 @@ const App = () => {
       </section>
 
       <section className="cta-section fade-in">
-        <h2 style={{color: 'white', marginBottom: '20px', fontSize: '2.5rem'}}>Ready to Transform Your Eyes?</h2>
-        <p style={{color: 'white', marginBottom: '40px', fontSize: '1.2rem', opacity: '0.9'}}>
+        <h2 style={{ color: 'white', marginBottom: '20px', fontSize: '2.5rem' }}>Ready to Transform Your Eyes?</h2>
+        <p style={{ color: 'white', marginBottom: '40px', fontSize: '1.2rem', opacity: '0.9' }}>
           Join thousands who have already discovered younger-looking eyes
         </p>
         <div className="cta-buttons-container">
@@ -1016,7 +1041,7 @@ const App = () => {
         <p>💰 Pay on Delivery Available</p>
         <p>🛡️ 100% Safe and Reliable</p>
         <div className="inline-cta">
-          <p style={{marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500'}}>
+          <p style={{ marginBottom: '20px', fontSize: '1.1rem', fontWeight: '500' }}>
             Safe, secure, and convenient ordering
           </p>
           <div className="cta-buttons-container">
